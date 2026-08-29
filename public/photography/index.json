@@ -1,0 +1,1030 @@
+{
+  "generatedBy": "scripts/fetch-photography.mjs",
+  "note": "Provenance for every photograph on the site. Replace a file with real studio work at the same id and dimensions, and remove its row from scripts/photography-sources.mjs.",
+  "licence": "Pexels licence (free to use, attribution not required, modification permitted). Credited here regardless.",
+  "count": 73,
+  "photographs": [
+    {
+      "id": "hero-veil",
+      "file": "/photography/hero-veil.jpg",
+      "width": 1200,
+      "height": 1500,
+      "bytes": 157583,
+      "subject": "Bridal close portrait with a maang tikka",
+      "credit": {
+        "photographer": "Imad Clicks",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/11742214/"
+      }
+    },
+    {
+      "id": "hero-detail",
+      "file": "/photography/hero-detail.jpg",
+      "width": 800,
+      "height": 1000,
+      "bytes": 58197,
+      "subject": "Gold jhumka earring at the ear",
+      "credit": {
+        "photographer": "Dhrupal Shiyal",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/37601639/"
+      }
+    },
+    {
+      "id": "cta-bride",
+      "file": "/photography/cta-bride.jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 143034,
+      "subject": "Bride outdoors in traditional jewellery",
+      "credit": {
+        "photographer": "Lalyphotos Karthi",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/29805014/"
+      }
+    },
+    {
+      "id": "journey-arch",
+      "file": "/photography/journey-arch.jpg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 131793,
+      "subject": "Artist applying product to a seated client",
+      "credit": {
+        "photographer": "George Milton",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/6953622/"
+      }
+    },
+    {
+      "id": "testimonial-portrait",
+      "file": "/photography/testimonial-portrait.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 254174,
+      "subject": "Bride in a red and gold sari",
+      "credit": {
+        "photographer": "Pexels contributor",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/13048652/"
+      }
+    },
+    {
+      "id": "journey-consultation",
+      "file": "/photography/journey-consultation.jpg",
+      "width": 800,
+      "height": 600,
+      "bytes": 71830,
+      "subject": "Artist and client in a lit studio",
+      "credit": {
+        "photographer": "Antoni Shkraba",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/5177992/"
+      }
+    },
+    {
+      "id": "journey-bridal-trial",
+      "file": "/photography/journey-bridal-trial.jpg",
+      "width": 800,
+      "height": 600,
+      "bytes": 43040,
+      "subject": "Makeup applied in a bright studio",
+      "credit": {
+        "photographer": "M1nh Art",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/32009285/"
+      }
+    },
+    {
+      "id": "journey-the-plan",
+      "file": "/photography/journey-the-plan.jpg",
+      "width": 800,
+      "height": 600,
+      "bytes": 57773,
+      "subject": "Close view of a veil and jewellery",
+      "credit": {
+        "photographer": "Deepak Sharma",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/35963259/"
+      }
+    },
+    {
+      "id": "journey-wedding-week",
+      "file": "/photography/journey-wedding-week.jpg",
+      "width": 800,
+      "height": 600,
+      "bytes": 41801,
+      "subject": "Facial treatment in a spa room",
+      "credit": {
+        "photographer": "Gustavo Fring",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/7446659/"
+      }
+    },
+    {
+      "id": "journey-the-day",
+      "file": "/photography/journey-the-day.jpg",
+      "width": 800,
+      "height": 600,
+      "bytes": 69054,
+      "subject": "Bride at a mirror, dressed and ready",
+      "credit": {
+        "photographer": "Look me Photography",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/19869152/"
+      }
+    },
+    {
+      "id": "about-studio",
+      "file": "/photography/about-studio.jpg",
+      "width": 1400,
+      "height": 900,
+      "bytes": 125514,
+      "subject": "Bride reflected in an ornate mirror",
+      "credit": {
+        "photographer": "vicky photography studio",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/28941551/"
+      }
+    },
+    {
+      "id": "about-philosophy",
+      "file": "/photography/about-philosophy.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 162228,
+      "subject": "Two women preparing for a wedding",
+      "credit": {
+        "photographer": "Rajat Sahu",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/30193762/"
+      }
+    },
+    {
+      "id": "services-hero",
+      "file": "/photography/services-hero.jpg",
+      "width": 1200,
+      "height": 1500,
+      "bytes": 239076,
+      "subject": "Bride smiling while her hair is dressed",
+      "credit": {
+        "photographer": "Jonathan Borba",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/10479671/"
+      }
+    },
+    {
+      "id": "services-hero-detail",
+      "file": "/photography/services-hero-detail.jpg",
+      "width": 800,
+      "height": 1000,
+      "bytes": 106287,
+      "subject": "Eyeshadow applied with a brush",
+      "credit": {
+        "photographer": "khezez",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/35341712/"
+      }
+    },
+    {
+      "id": "packages-hero",
+      "file": "/photography/packages-hero.jpg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 102659,
+      "subject": "Bride wearing traditional jewellery",
+      "credit": {
+        "photographer": "Look me Photography",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/19021379/"
+      }
+    },
+    {
+      "id": "portfolio-hero",
+      "file": "/photography/portfolio-hero.jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 169615,
+      "subject": "Bride in bright traditional accessories",
+      "credit": {
+        "photographer": "Digvijaysinh Rajput",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/7234531/"
+      }
+    },
+    {
+      "id": "looks-hero",
+      "file": "/photography/looks-hero.jpg",
+      "width": 1200,
+      "height": 1500,
+      "bytes": 388992,
+      "subject": "Bride smiling in an ornate red gown",
+      "credit": {
+        "photographer": "SKG Photography",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/29133472/"
+      }
+    },
+    {
+      "id": "artists-hero",
+      "file": "/photography/artists-hero.jpg",
+      "width": 1400,
+      "height": 900,
+      "bytes": 66431,
+      "subject": "Artist applying makeup to a seated bride",
+      "credit": {
+        "photographer": "Hadi Saerani",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/13933305/"
+      }
+    },
+    {
+      "id": "contact-hero",
+      "file": "/photography/contact-hero.jpg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 134226,
+      "subject": "Woman in a traditional saree and jewellery",
+      "credit": {
+        "photographer": "Yogesh Sasane",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/15416958/"
+      }
+    },
+    {
+      "id": "book-hero",
+      "file": "/photography/book-hero.jpg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 97445,
+      "subject": "Makeup artist working with a model",
+      "credit": {
+        "photographer": "Israyosoy S.",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/28281391/"
+      }
+    },
+    {
+      "id": "service-bridal-makeup",
+      "file": "/photography/service-bridal-makeup.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 128070,
+      "subject": "Makeup applied for a bridal look",
+      "credit": {
+        "photographer": "Fahad Puthawala",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/33965317/"
+      }
+    },
+    {
+      "id": "service-bridal-hair",
+      "file": "/photography/service-bridal-hair.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 109541,
+      "subject": "Bridal hair being set in a salon",
+      "credit": {
+        "photographer": "khezez",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/35341760/"
+      }
+    },
+    {
+      "id": "service-skin-and-prep",
+      "file": "/photography/service-skin-and-prep.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 126601,
+      "subject": "Skincare treatment in a warm-lit room",
+      "credit": {
+        "photographer": "DAVE GARCIA",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/37229291/"
+      }
+    },
+    {
+      "id": "service-hair-care-and-treatments",
+      "file": "/photography/service-hair-care-and-treatments.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 136844,
+      "subject": "Hair treated and finished",
+      "credit": {
+        "photographer": "Vladimir Konoplev",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/11813865/"
+      }
+    },
+    {
+      "id": "service-grooming-and-add-ons",
+      "file": "/photography/service-grooming-and-add-ons.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 104693,
+      "subject": "Mascara applied to lashes",
+      "credit": {
+        "photographer": "Shiny Diamond",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/3762768/"
+      }
+    },
+    {
+      "id": "look-classic-red",
+      "file": "/photography/look-classic-red.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 236938,
+      "subject": "Bride in a vivid red outfit",
+      "credit": {
+        "photographer": "Satyam Pixels",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/38917731/"
+      }
+    },
+    {
+      "id": "look-ivory-pearl",
+      "file": "/photography/look-ivory-pearl.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 111161,
+      "subject": "Bride in a pale glamour look",
+      "credit": {
+        "photographer": "Yusuf Miah",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/17125530/"
+      }
+    },
+    {
+      "id": "look-soft-glam",
+      "file": "/photography/look-soft-glam.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 132719,
+      "subject": "Warm neutral bridal portrait",
+      "credit": {
+        "photographer": "AMA International Academy",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/30825617/"
+      }
+    },
+    {
+      "id": "look-modern-minimal",
+      "file": "/photography/look-modern-minimal.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 145514,
+      "subject": "Restrained bridal portrait",
+      "credit": {
+        "photographer": "SKG Photography",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/2673365/"
+      }
+    },
+    {
+      "id": "artist-ananya-mehta",
+      "file": "/photography/artist-ananya-mehta.jpg",
+      "width": 800,
+      "height": 1000,
+      "bytes": 105672,
+      "subject": "Traditional bridal makeup, close",
+      "credit": {
+        "photographer": "Satyam vicky",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/38773208/"
+      }
+    },
+    {
+      "id": "artist-rhea-kapoor",
+      "file": "/photography/artist-rhea-kapoor.jpg",
+      "width": 800,
+      "height": 1000,
+      "bytes": 78869,
+      "subject": "Bridal updo dressed with red flowers",
+      "credit": {
+        "photographer": "Studio Dreamview",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/34186057/"
+      }
+    },
+    {
+      "id": "artist-meera-shah",
+      "file": "/photography/artist-meera-shah.jpg",
+      "width": 800,
+      "height": 1000,
+      "bytes": 96878,
+      "subject": "Facial treatment mask being applied",
+      "credit": {
+        "photographer": "DAVE GARCIA",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/37229301/"
+      }
+    },
+    {
+      "id": "portfolio-jaipur-courtyard",
+      "file": "/photography/portfolio-jaipur-courtyard.jpg",
+      "width": 1000,
+      "height": 1250,
+      "bytes": 259764,
+      "subject": "Bride in red, outdoors in daylight",
+      "credit": {
+        "photographer": "apertur 2.8",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/29396108/"
+      }
+    },
+    {
+      "id": "portfolio-ivory-morning",
+      "file": "/photography/portfolio-ivory-morning.jpg",
+      "width": 1000,
+      "height": 1250,
+      "bytes": 259243,
+      "subject": "Bride in window light",
+      "credit": {
+        "photographer": "Sahil Singh",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/17001511/"
+      }
+    },
+    {
+      "id": "portfolio-monsoon-mehendi",
+      "file": "/photography/portfolio-monsoon-mehendi.jpg",
+      "width": 1000,
+      "height": 1400,
+      "bytes": 115328,
+      "subject": "Henna-covered bridal hands",
+      "credit": {
+        "photographer": "Rina Islam",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/32029488/"
+      }
+    },
+    {
+      "id": "portfolio-coastal-sangeet",
+      "file": "/photography/portfolio-coastal-sangeet.jpg",
+      "width": 1000,
+      "height": 1250,
+      "bytes": 178191,
+      "subject": "Bride in red against greenery",
+      "credit": {
+        "photographer": "tushar ahamed",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/34962720/"
+      }
+    },
+    {
+      "id": "portfolio-heirloom-red",
+      "file": "/photography/portfolio-heirloom-red.jpg",
+      "width": 1000,
+      "height": 1250,
+      "bytes": 168070,
+      "subject": "Bride in a deep red lehenga",
+      "credit": {
+        "photographer": "SATNAM FILM",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/25811178/"
+      }
+    },
+    {
+      "id": "portfolio-terrace-reception",
+      "file": "/photography/portfolio-terrace-reception.jpg",
+      "width": 1000,
+      "height": 1250,
+      "bytes": 210387,
+      "subject": "Bride in jewellery, evening light",
+      "credit": {
+        "photographer": "stardust multimedia",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/12579916/"
+      }
+    },
+    {
+      "id": "portfolio-temple-vows",
+      "file": "/photography/portfolio-temple-vows.jpg",
+      "width": 1000,
+      "height": 1250,
+      "bytes": 255802,
+      "subject": "South Indian bridal portrait",
+      "credit": {
+        "photographer": "D. krishna",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/19891850/"
+      }
+    },
+    {
+      "id": "portfolio-champagne-engagement",
+      "file": "/photography/portfolio-champagne-engagement.jpg",
+      "width": 1000,
+      "height": 1400,
+      "bytes": 219446,
+      "subject": "Bride in soft champagne tones",
+      "credit": {
+        "photographer": "BM Capture",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/36519701/"
+      }
+    },
+    {
+      "id": "portfolio-desert-haldi",
+      "file": "/photography/portfolio-desert-haldi.jpg",
+      "width": 1000,
+      "height": 1250,
+      "bytes": 214867,
+      "subject": "Bride smiling at a haldi ceremony",
+      "credit": {
+        "photographer": "SXYLEN",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/17493647/"
+      }
+    },
+    {
+      "id": "portfolio-winter-nikah",
+      "file": "/photography/portfolio-winter-nikah.jpg",
+      "width": 1000,
+      "height": 1250,
+      "bytes": 277444,
+      "subject": "Bride in layered bridal dress",
+      "credit": {
+        "photographer": "AMA International Academy",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/30780337/"
+      }
+    },
+    {
+      "id": "portfolio-garden-christian",
+      "file": "/photography/portfolio-garden-christian.jpg",
+      "width": 1000,
+      "height": 1250,
+      "bytes": 152608,
+      "subject": "Bride outdoors with henna",
+      "credit": {
+        "photographer": "Rupinder Korpal",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/23623618/"
+      }
+    },
+    {
+      "id": "portfolio-studio-portrait",
+      "file": "/photography/portfolio-studio-portrait.jpg",
+      "width": 1000,
+      "height": 1250,
+      "bytes": 183199,
+      "subject": "Studio bridal portrait",
+      "credit": {
+        "photographer": "SKG Photography",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/29368882/"
+      }
+    },
+    {
+      "id": "before-soft-glam",
+      "file": "/photography/before-soft-glam.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 78105,
+      "subject": "Eyeshadow applied, eyes closed",
+      "credit": {
+        "photographer": "Kampus Production",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/7514850/"
+      }
+    },
+    {
+      "id": "after-soft-glam",
+      "file": "/photography/after-soft-glam.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 152291,
+      "subject": "Finished bridal look with jewellery",
+      "credit": {
+        "photographer": "SKG Photography",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/29368881/"
+      }
+    },
+    {
+      "id": "before-classic-red",
+      "file": "/photography/before-classic-red.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 149696,
+      "subject": "Eye shadow being applied",
+      "credit": {
+        "photographer": "Lucretius Mooka",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/10541310/"
+      }
+    },
+    {
+      "id": "after-classic-red",
+      "file": "/photography/after-classic-red.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 215327,
+      "subject": "Finished red bridal look",
+      "credit": {
+        "photographer": "SKG Photography",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/29368884/"
+      }
+    },
+    {
+      "id": "before-modern-minimal",
+      "file": "/photography/before-modern-minimal.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 95146,
+      "subject": "Eye shadow applied by hand",
+      "credit": {
+        "photographer": "Alena Darmel",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/8990592/"
+      }
+    },
+    {
+      "id": "after-modern-minimal",
+      "file": "/photography/after-modern-minimal.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 254638,
+      "subject": "Finished restrained bridal look",
+      "credit": {
+        "photographer": "Pexels contributor",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/13048651/"
+      }
+    },
+    {
+      "id": "event-mehendi",
+      "file": "/photography/event-mehendi.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 199090,
+      "subject": "Bride at her mehendi",
+      "credit": {
+        "photographer": "Anish Bindoriya",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/28120522/"
+      }
+    },
+    {
+      "id": "event-haldi",
+      "file": "/photography/event-haldi.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 200156,
+      "subject": "Bride at a haldi ceremony",
+      "credit": {
+        "photographer": "Deepak Sharma",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/35327990/"
+      }
+    },
+    {
+      "id": "event-engagement",
+      "file": "/photography/event-engagement.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 96683,
+      "subject": "Bride in an engagement look",
+      "credit": {
+        "photographer": "Vikas Nagity",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/35007727/"
+      }
+    },
+    {
+      "id": "event-wedding",
+      "file": "/photography/event-wedding.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 200981,
+      "subject": "Bride on her wedding day",
+      "credit": {
+        "photographer": "SKG Photography",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/29370687/"
+      }
+    },
+    {
+      "id": "event-reception",
+      "file": "/photography/event-reception.jpg",
+      "width": 900,
+      "height": 1200,
+      "bytes": 105216,
+      "subject": "Bride in a reception look",
+      "credit": {
+        "photographer": "Bhola Chourasia",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/32212568/"
+      }
+    },
+    {
+      "id": "instagram-01",
+      "file": "/photography/instagram-01.jpg",
+      "width": 600,
+      "height": 600,
+      "bytes": 45868,
+      "subject": "Traditional earrings, close",
+      "credit": {
+        "photographer": "Dhrupal Shiyal",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/37601638/"
+      }
+    },
+    {
+      "id": "instagram-02",
+      "file": "/photography/instagram-02.jpg",
+      "width": 600,
+      "height": 600,
+      "bytes": 49303,
+      "subject": "Mehndi on a pair of hands",
+      "credit": {
+        "photographer": "Darshan Dave",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/38147796/"
+      }
+    },
+    {
+      "id": "instagram-03",
+      "file": "/photography/instagram-03.jpg",
+      "width": 600,
+      "height": 600,
+      "bytes": 47387,
+      "subject": "Red and gold bangles",
+      "credit": {
+        "photographer": "star photography",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/9808451/"
+      }
+    },
+    {
+      "id": "instagram-04",
+      "file": "/photography/instagram-04.jpg",
+      "width": 600,
+      "height": 600,
+      "bytes": 127360,
+      "subject": "Bridal jewellery on a red saree",
+      "credit": {
+        "photographer": "Punam Oishy",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/35059564/"
+      }
+    },
+    {
+      "id": "instagram-05",
+      "file": "/photography/instagram-05.jpg",
+      "width": 600,
+      "height": 600,
+      "bytes": 62798,
+      "subject": "Braid dressed with flowers",
+      "credit": {
+        "photographer": "Keith Lobo",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/8881953/"
+      }
+    },
+    {
+      "id": "instagram-06",
+      "file": "/photography/instagram-06.jpg",
+      "width": 600,
+      "height": 600,
+      "bytes": 54534,
+      "subject": "Earring at the ear",
+      "credit": {
+        "photographer": "Yogendra Singh",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/2733490/"
+      }
+    },
+    {
+      "id": "instagram-07",
+      "file": "/photography/instagram-07.jpg",
+      "width": 600,
+      "height": 600,
+      "bytes": 43276,
+      "subject": "Bridal hair, rear view",
+      "credit": {
+        "photographer": "Caleb Oquendo",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/34602190/"
+      }
+    },
+    {
+      "id": "instagram-08",
+      "file": "/photography/instagram-08.jpg",
+      "width": 600,
+      "height": 600,
+      "bytes": 32685,
+      "subject": "Foundation and brushes on a bench",
+      "credit": {
+        "photographer": "Ron Lach",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/8089240/"
+      }
+    },
+    {
+      "id": "gallery-01",
+      "file": "/photography/gallery-01.jpg",
+      "width": 800,
+      "height": 1000,
+      "bytes": 146413,
+      "subject": "Bride in a red sari",
+      "credit": {
+        "photographer": "SKG Photography",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/29368877/"
+      }
+    },
+    {
+      "id": "gallery-02",
+      "file": "/photography/gallery-02.jpg",
+      "width": 1000,
+      "height": 700,
+      "bytes": 117892,
+      "subject": "Bride in a red lehenga, smiling",
+      "credit": {
+        "photographer": "Lucky Digital",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/17154861/"
+      }
+    },
+    {
+      "id": "gallery-03",
+      "file": "/photography/gallery-03.jpg",
+      "width": 800,
+      "height": 1100,
+      "bytes": 60804,
+      "subject": "Mehndi being applied",
+      "credit": {
+        "photographer": "Nirav Jani",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/36354615/"
+      }
+    },
+    {
+      "id": "gallery-04",
+      "file": "/photography/gallery-04.jpg",
+      "width": 1000,
+      "height": 667,
+      "bytes": 65334,
+      "subject": "Bridal portrait in low light",
+      "credit": {
+        "photographer": "SAMPARK FILMS",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/32170148/"
+      }
+    },
+    {
+      "id": "gallery-05",
+      "file": "/photography/gallery-05.jpg",
+      "width": 800,
+      "height": 1000,
+      "bytes": 187000,
+      "subject": "Seated bride with a veil",
+      "credit": {
+        "photographer": "Rajib Ahmed",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/25225117/"
+      }
+    },
+    {
+      "id": "gallery-06",
+      "file": "/photography/gallery-06.jpg",
+      "width": 1000,
+      "height": 667,
+      "bytes": 71087,
+      "subject": "Bride in traditional attire",
+      "credit": {
+        "photographer": "Gaurav Vishwakarma",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/36102603/"
+      }
+    },
+    {
+      "id": "gallery-07",
+      "file": "/photography/gallery-07.jpg",
+      "width": 800,
+      "height": 1200,
+      "bytes": 137346,
+      "subject": "Floral bridal updo, rear view",
+      "credit": {
+        "photographer": "Burak Evlivan",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/29858712/"
+      }
+    },
+    {
+      "id": "gallery-08",
+      "file": "/photography/gallery-08.jpg",
+      "width": 1000,
+      "height": 667,
+      "bytes": 131991,
+      "subject": "Henna and bangles on bridal hands",
+      "credit": {
+        "photographer": "Akshay Patil",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/37035227/"
+      }
+    },
+    {
+      "id": "gallery-09",
+      "file": "/photography/gallery-09.jpg",
+      "width": 800,
+      "height": 1000,
+      "bytes": 99334,
+      "subject": "Bride being prepared by her artist",
+      "credit": {
+        "photographer": "Masood Aslami",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/29624010/"
+      }
+    },
+    {
+      "id": "gallery-10",
+      "file": "/photography/gallery-10.jpg",
+      "width": 1000,
+      "height": 667,
+      "bytes": 49125,
+      "subject": "Eye makeup applied with a brush",
+      "credit": {
+        "photographer": "Xhemi Photo",
+        "source": "Pexels",
+        "licence": "Pexels licence",
+        "page": "https://www.pexels.com/photo/15046691/"
+      }
+    }
+  ]
+}

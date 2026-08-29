@@ -1,0 +1,317 @@
+[
+  {
+    "id": "hero-veil",
+    "family": "veil",
+    "width": 1200,
+    "height": 1500,
+    "scheme": "sand"
+  },
+  {
+    "id": "journey-arch",
+    "family": "arch",
+    "width": 1200,
+    "height": 800,
+    "scheme": "ivory"
+  },
+  {
+    "id": "about-studio",
+    "family": "arch",
+    "width": 1400,
+    "height": 900,
+    "scheme": "sand"
+  },
+  {
+    "id": "about-philosophy",
+    "family": "drape",
+    "width": 900,
+    "height": 1200,
+    "scheme": "blush"
+  },
+  {
+    "id": "cta-drape",
+    "family": "drape",
+    "width": 1600,
+    "height": 600,
+    "scheme": "espresso"
+  },
+  {
+    "id": "contact-map",
+    "family": "texture",
+    "width": 1200,
+    "height": 800,
+    "scheme": "ivory"
+  },
+  {
+    "id": "texture-ivory",
+    "family": "texture",
+    "width": 1600,
+    "height": 600,
+    "scheme": "ivory"
+  },
+  {
+    "id": "service-bridal-makeup",
+    "family": "rosette",
+    "width": 900,
+    "height": 1200,
+    "scheme": "gold"
+  },
+  {
+    "id": "service-bridal-hair",
+    "family": "drape",
+    "width": 900,
+    "height": 1200,
+    "scheme": "sand"
+  },
+  {
+    "id": "service-skin-and-prep",
+    "family": "texture",
+    "width": 900,
+    "height": 1200,
+    "scheme": "blush"
+  },
+  {
+    "id": "service-hair-care-and-treatments",
+    "family": "filigree",
+    "width": 900,
+    "height": 1200,
+    "scheme": "ivory"
+  },
+  {
+    "id": "service-grooming-and-add-ons",
+    "family": "arch",
+    "width": 900,
+    "height": 1200,
+    "scheme": "sand"
+  },
+  {
+    "id": "look-classic-red",
+    "family": "rosette",
+    "width": 900,
+    "height": 1200,
+    "scheme": "gold"
+  },
+  {
+    "id": "look-ivory-pearl",
+    "family": "veil",
+    "width": 900,
+    "height": 1200,
+    "scheme": "ivory"
+  },
+  {
+    "id": "look-soft-glam",
+    "family": "portrait",
+    "width": 900,
+    "height": 1200,
+    "scheme": "blush"
+  },
+  {
+    "id": "look-modern-minimal",
+    "family": "filigree",
+    "width": 900,
+    "height": 1200,
+    "scheme": "sand"
+  },
+  {
+    "id": "artist-ananya-mehta",
+    "family": "portrait",
+    "width": 800,
+    "height": 1000,
+    "scheme": "sand"
+  },
+  {
+    "id": "artist-rhea-kapoor",
+    "family": "portrait",
+    "width": 800,
+    "height": 1000,
+    "scheme": "blush"
+  },
+  {
+    "id": "artist-meera-shah",
+    "family": "portrait",
+    "width": 800,
+    "height": 1000,
+    "scheme": "ivory"
+  },
+  {
+    "id": "portfolio-jaipur-courtyard",
+    "family": "arch",
+    "width": 1000,
+    "height": 1250,
+    "scheme": "gold"
+  },
+  {
+    "id": "portfolio-ivory-morning",
+    "family": "veil",
+    "width": 1000,
+    "height": 1250,
+    "scheme": "ivory"
+  },
+  {
+    "id": "portfolio-monsoon-mehendi",
+    "family": "filigree",
+    "width": 1000,
+    "height": 1400,
+    "scheme": "sand"
+  },
+  {
+    "id": "portfolio-coastal-sangeet",
+    "family": "drape",
+    "width": 1000,
+    "height": 1250,
+    "scheme": "blush"
+  },
+  {
+    "id": "portfolio-heirloom-red",
+    "family": "rosette",
+    "width": 1000,
+    "height": 1250,
+    "scheme": "gold"
+  },
+  {
+    "id": "portfolio-terrace-reception",
+    "family": "portrait",
+    "width": 1000,
+    "height": 1250,
+    "scheme": "espresso"
+  },
+  {
+    "id": "portfolio-temple-vows",
+    "family": "arch",
+    "width": 1000,
+    "height": 1250,
+    "scheme": "sand"
+  },
+  {
+    "id": "portfolio-champagne-engagement",
+    "family": "veil",
+    "width": 1000,
+    "height": 1400,
+    "scheme": "gold"
+  },
+  {
+    "id": "portfolio-desert-haldi",
+    "family": "texture",
+    "width": 1000,
+    "height": 1250,
+    "scheme": "sand"
+  },
+  {
+    "id": "portfolio-winter-nikah",
+    "family": "drape",
+    "width": 1000,
+    "height": 1250,
+    "scheme": "ivory"
+  },
+  {
+    "id": "portfolio-garden-christian",
+    "family": "filigree",
+    "width": 1000,
+    "height": 1250,
+    "scheme": "blush"
+  },
+  {
+    "id": "portfolio-studio-portrait",
+    "family": "portrait",
+    "width": 1000,
+    "height": 1250,
+    "scheme": "ivory"
+  },
+  {
+    "id": "before-soft-glam",
+    "family": "texture",
+    "width": 900,
+    "height": 1200,
+    "scheme": "ivory"
+  },
+  {
+    "id": "after-soft-glam",
+    "family": "portrait",
+    "width": 900,
+    "height": 1200,
+    "scheme": "blush"
+  },
+  {
+    "id": "before-classic-red",
+    "family": "texture",
+    "width": 900,
+    "height": 1200,
+    "scheme": "sand"
+  },
+  {
+    "id": "after-classic-red",
+    "family": "rosette",
+    "width": 900,
+    "height": 1200,
+    "scheme": "gold"
+  },
+  {
+    "id": "before-modern-minimal",
+    "family": "texture",
+    "width": 900,
+    "height": 1200,
+    "scheme": "blush"
+  },
+  {
+    "id": "after-modern-minimal",
+    "family": "filigree",
+    "width": 900,
+    "height": 1200,
+    "scheme": "sand"
+  },
+  {
+    "id": "instagram-01",
+    "family": "rosette",
+    "width": 600,
+    "height": 600,
+    "scheme": "gold"
+  },
+  {
+    "id": "instagram-02",
+    "family": "veil",
+    "width": 600,
+    "height": 600,
+    "scheme": "ivory"
+  },
+  {
+    "id": "instagram-03",
+    "family": "drape",
+    "width": 600,
+    "height": 600,
+    "scheme": "sand"
+  },
+  {
+    "id": "instagram-04",
+    "family": "filigree",
+    "width": 600,
+    "height": 600,
+    "scheme": "blush"
+  },
+  {
+    "id": "instagram-05",
+    "family": "arch",
+    "width": 600,
+    "height": 600,
+    "scheme": "sand"
+  },
+  {
+    "id": "instagram-06",
+    "family": "portrait",
+    "width": 600,
+    "height": 600,
+    "scheme": "ivory"
+  },
+  {
+    "id": "instagram-07",
+    "family": "texture",
+    "width": 600,
+    "height": 600,
+    "scheme": "gold"
+  },
+  {
+    "id": "instagram-08",
+    "family": "rosette",
+    "width": 600,
+    "height": 600,
+    "scheme": "blush"
+  }
+]

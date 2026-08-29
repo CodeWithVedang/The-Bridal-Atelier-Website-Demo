@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"D:/websites-buil-skill-vedang/universal-branded-website-skill-pack/website_skill_pack\" 2>&1 | head -50)"
+    ]
+  }
+}
