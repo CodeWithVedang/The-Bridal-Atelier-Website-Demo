@@ -1,8 +1,5 @@
 'use client';
 
-import { useRef } from 'react';
-
-import { cn } from '@/lib/cn';
 import { useReveal } from '@/hooks/useReveal';
 
 import type { ElementType, ReactNode } from 'react';
@@ -16,9 +13,10 @@ import type { ElementType, ReactNode } from 'react';
  * reduced-motion users get plain, readable content — which is why this component
  * is safe to wrap around anything, including copy that matters.
  *
- * The `reveal-in` class is applied only to elements that were actually hidden
- * first. Something already above the fold is never animated at all: fading in
- * content that the visitor is already looking at is a flash, not a flourish.
+ * Something already on screen at mount is never animated at all, and the hook
+ * decides that by measuring the node, so this component holds no state and passes
+ * `className` straight through. The reveal is expressed as a `data-reveal`
+ * attribute the hook owns; React owns `className`, and the two do not collide.
  *
  * `as` exists because a reveal must not change the document structure. A list of
  * journey stages still needs `<li>` children of a real `<ol>`, and a reveal that
@@ -34,18 +32,10 @@ export interface RevealProps {
 }
 
 export function Reveal({ children, delayMs = 0, as: Tag = 'div', className }: RevealProps) {
-  const { ref, shown, pending } = useReveal({ delayMs });
-  const wasHidden = useRef(false);
-  if (pending) wasHidden.current = true;
+  const { ref } = useReveal({ delayMs });
 
   return (
-    <Tag
-      ref={ref}
-      className={cn(
-        pending ? 'reveal-pending' : wasHidden.current && shown ? 'reveal-in' : undefined,
-        className,
-      )}
-    >
+    <Tag ref={ref} className={className}>
       {children}
     </Tag>
   );

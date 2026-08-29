@@ -50,9 +50,19 @@ export function useFocusTrap(
 ): React.RefObject<HTMLDivElement | null> {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const restoreRef = useRef<HTMLElement | null>(null);
-  // Held in a ref so changing the handler identity does not tear down the trap.
+  // Held in a ref so changing the handler identity does not tear down the trap:
+  // the effect below moves focus, locks scrolling and binds a document listener,
+  // and re-running it because a parent re-created its `onEscape` closure would
+  // yank focus back to the first link mid-interaction.
+  //
+  // Synced in its own effect rather than during render. A render can be thrown
+  // away or replayed; a ref written during one is a mutation React cannot undo
+  // (`react-hooks/refs`). An effect is late enough to be safe and early enough to
+  // be correct — key events are only delivered after the commit that follows.
   const escapeRef = useRef(onEscape);
-  escapeRef.current = onEscape;
+  useEffect(() => {
+    escapeRef.current = onEscape;
+  }, [onEscape]);
 
   useEffect(() => {
     if (!active) return;

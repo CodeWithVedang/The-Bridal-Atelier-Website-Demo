@@ -87,10 +87,11 @@ export function EditorialImage({
       style={{ aspectRatio: ratio ?? `${asset.width} / ${asset.height}` }}
     >
       {isVector ? (
-        // eslint-disable-next-line @next/next/no-img-element -- see the note above:
-        // SVG deliberately bypasses the optimiser rather than enabling
-        // dangerouslyAllowSVG. Width/height are still declared so the intrinsic
-        // ratio is known even if the aspect box is overridden.
+        // SVG deliberately bypasses the Next optimiser rather than enabling
+        // dangerouslyAllowSVG — see the note at the top of this file. Width and
+        // height are still declared so the intrinsic ratio is known even when the
+        // aspect box is overridden.
+        // eslint-disable-next-line @next/next/no-img-element -- deliberate, see above
         <img
           src={asset.src}
           alt={text}

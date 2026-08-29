@@ -24,9 +24,10 @@ import { MobileNavSheet } from './MobileNavSheet';
  * layout read per frame. It is compared against the current state before setting,
  * so scrolling from 200px to 800px produces no re-renders at all.
  *
- * The sheet is closed on route change. Without that, tapping a link inside it
- * navigates and leaves the sheet open over the new page — the `onClick` handler on
- * each link covers the common case, but not a browser back gesture.
+ * The sheet is **keyed to the route it was opened on**, so a navigation closes it
+ * without a second render to undo the first. The `onClick` on each link covers the
+ * common case; keying covers the rest, including a browser back gesture, where no
+ * handler of ours runs at all.
  *
  * The sheet is a **sibling** of `<header>`, not a child. Once scrolled, the header
  * carries `backdrop-blur`, and `backdrop-filter` makes an element a containing
@@ -39,7 +40,12 @@ const SCROLL_THRESHOLD = 24;
 export function SiteHeader() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  // The route the sheet was opened on, not a bare boolean. `menuOpen` is then
+  // derived, and a navigation closes the sheet by making the two disagree —
+  // no effect watching `pathname`, and no render whose only job is to undo the
+  // one before it.
+  const [openedAt, setOpenedAt] = useState<string | null>(null);
+  const menuOpen = openedAt === pathname;
 
   useEffect(() => {
     function onScroll(): void {
@@ -50,10 +56,6 @@ export function SiteHeader() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [pathname]);
 
   return (
     <>
@@ -97,7 +99,7 @@ export function SiteHeader() {
               aria-expanded={menuOpen}
               aria-haspopup="dialog"
               onClick={() => {
-                setMenuOpen(true);
+                setOpenedAt(pathname);
                 track('nav_opened');
               }}
               className="grid size-11 place-items-center rounded-sm text-espresso-900 transition-colors duration-(--dur-fast) hover:bg-ivory-100 lg:hidden"
@@ -111,7 +113,7 @@ export function SiteHeader() {
 
       <MobileNavSheet
         open={menuOpen}
-        onClose={() => setMenuOpen(false)}
+        onClose={() => setOpenedAt(null)}
         items={primaryNav}
         pathname={pathname}
       />

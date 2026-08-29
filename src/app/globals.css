@@ -340,15 +340,19 @@
   }
 }
 
-/* Reveal-on-scroll. The element is visible by default and only hidden once
-   the observer has confirmed it can run — so with JS disabled, or before
-   hydration, all content is readable. */
-@utility reveal-pending {
+/* Reveal-on-scroll. The element is visible by default and only hidden once the
+   observer has confirmed it can run — so with JS disabled, or before hydration,
+   all content is readable.
+
+   Attribute selectors rather than utilities because `useReveal` sets the state
+   directly on the node: React owns `className`, and a re-render would otherwise
+   drop a class it did not author, cancelling the animation mid-flight. */
+[data-reveal='pending'] {
   opacity: 0;
   transform: translate3d(0, 16px, 0);
 }
 
-@utility reveal-in {
+[data-reveal='in'] {
   animation: var(--animate-reveal);
 }
 
@@ -437,7 +441,10 @@
     scroll-behavior: auto !important;
   }
 
-  .reveal-pending {
+  /* `useReveal` already declines to arm anything under reduced motion. This is
+     the belt to that braces: a node armed a frame before the setting changed is
+     released rather than left transparent. */
+  [data-reveal] {
     opacity: 1;
     transform: none;
   }
