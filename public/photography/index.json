@@ -1,7 +1,7 @@
 {
   "generatedBy": "scripts/fetch-photography.mjs",
   "note": "Provenance for every photograph on the site. Replace a file with real studio work at the same id and dimensions, and remove its row from scripts/photography-sources.mjs.",
-  "licence": "Pexels licence (free to use, attribution not required, modification permitted). Credited here regardless.",
+  "licence": "Most photographs are used under the Pexels licence (free to use, attribution not required, modification permitted) and credited here regardless. Rows credited to a studio original were supplied with the project and are not Pexels images.",
   "count": 73,
   "photographs": [
     {
@@ -621,90 +621,6 @@
       }
     },
     {
-      "id": "before-soft-glam",
-      "file": "/photography/before-soft-glam.jpg",
-      "width": 900,
-      "height": 1200,
-      "bytes": 78105,
-      "subject": "Eyeshadow applied, eyes closed",
-      "credit": {
-        "photographer": "Kampus Production",
-        "source": "Pexels",
-        "licence": "Pexels licence",
-        "page": "https://www.pexels.com/photo/7514850/"
-      }
-    },
-    {
-      "id": "after-soft-glam",
-      "file": "/photography/after-soft-glam.jpg",
-      "width": 900,
-      "height": 1200,
-      "bytes": 152291,
-      "subject": "Finished bridal look with jewellery",
-      "credit": {
-        "photographer": "SKG Photography",
-        "source": "Pexels",
-        "licence": "Pexels licence",
-        "page": "https://www.pexels.com/photo/29368881/"
-      }
-    },
-    {
-      "id": "before-classic-red",
-      "file": "/photography/before-classic-red.jpg",
-      "width": 900,
-      "height": 1200,
-      "bytes": 149696,
-      "subject": "Eye shadow being applied",
-      "credit": {
-        "photographer": "Lucretius Mooka",
-        "source": "Pexels",
-        "licence": "Pexels licence",
-        "page": "https://www.pexels.com/photo/10541310/"
-      }
-    },
-    {
-      "id": "after-classic-red",
-      "file": "/photography/after-classic-red.jpg",
-      "width": 900,
-      "height": 1200,
-      "bytes": 215327,
-      "subject": "Finished red bridal look",
-      "credit": {
-        "photographer": "SKG Photography",
-        "source": "Pexels",
-        "licence": "Pexels licence",
-        "page": "https://www.pexels.com/photo/29368884/"
-      }
-    },
-    {
-      "id": "before-modern-minimal",
-      "file": "/photography/before-modern-minimal.jpg",
-      "width": 900,
-      "height": 1200,
-      "bytes": 95146,
-      "subject": "Eye shadow applied by hand",
-      "credit": {
-        "photographer": "Alena Darmel",
-        "source": "Pexels",
-        "licence": "Pexels licence",
-        "page": "https://www.pexels.com/photo/8990592/"
-      }
-    },
-    {
-      "id": "after-modern-minimal",
-      "file": "/photography/after-modern-minimal.jpg",
-      "width": 900,
-      "height": 1200,
-      "bytes": 254638,
-      "subject": "Finished restrained bridal look",
-      "credit": {
-        "photographer": "Pexels contributor",
-        "source": "Pexels",
-        "licence": "Pexels licence",
-        "page": "https://www.pexels.com/photo/13048651/"
-      }
-    },
-    {
       "id": "event-mehendi",
       "file": "/photography/event-mehendi.jpg",
       "width": 900,
@@ -1024,6 +940,90 @@
         "source": "Pexels",
         "licence": "Pexels licence",
         "page": "https://www.pexels.com/photo/15046691/"
+      }
+    },
+    {
+      "id": "before-soft-glam",
+      "file": "/photography/before-soft-glam.jpg",
+      "width": 1000,
+      "height": 1120,
+      "bytes": 105358,
+      "subject": "The same subject before the first brush: bare skin, hair clipped back at the mirror",
+      "credit": {
+        "photographer": "Supplied with the project brief",
+        "source": "Studio original",
+        "licence": "Supplied for use in this build. Not a stock image and not covered by the Pexels licence.",
+        "page": ""
+      }
+    },
+    {
+      "id": "after-soft-glam",
+      "file": "/photography/after-soft-glam.jpg",
+      "width": 1000,
+      "height": 1120,
+      "bytes": 125219,
+      "subject": "The finished soft glam look on the same subject: warm neutral base, defined eye, glossed lip",
+      "credit": {
+        "photographer": "Supplied with the project brief",
+        "source": "Studio original",
+        "licence": "Supplied for use in this build. Not a stock image and not covered by the Pexels licence.",
+        "page": ""
+      }
+    },
+    {
+      "id": "before-classic-red",
+      "file": "/photography/before-classic-red.jpg",
+      "width": 1000,
+      "height": 1120,
+      "bytes": 115935,
+      "subject": "The same subject before the first brush: bare skin, hair pinned away from the face",
+      "credit": {
+        "photographer": "Supplied with the project brief",
+        "source": "Studio original",
+        "licence": "Supplied for use in this build. Not a stock image and not covered by the Pexels licence.",
+        "page": ""
+      }
+    },
+    {
+      "id": "after-classic-red",
+      "file": "/photography/after-classic-red.jpg",
+      "width": 1000,
+      "height": 1120,
+      "bytes": 126711,
+      "subject": "The finished classic red look on the same subject: deep red lip, softly smoked eye",
+      "credit": {
+        "photographer": "Supplied with the project brief",
+        "source": "Studio original",
+        "licence": "Supplied for use in this build. Not a stock image and not covered by the Pexels licence.",
+        "page": ""
+      }
+    },
+    {
+      "id": "before-modern-minimal",
+      "file": "/photography/before-modern-minimal.jpg",
+      "width": 1000,
+      "height": 1120,
+      "bytes": 103954,
+      "subject": "The same subject before the first brush, seated at the studio mirror",
+      "credit": {
+        "photographer": "Supplied with the project brief",
+        "source": "Studio original",
+        "licence": "Supplied for use in this build. Not a stock image and not covered by the Pexels licence.",
+        "page": ""
+      }
+    },
+    {
+      "id": "after-modern-minimal",
+      "file": "/photography/after-modern-minimal.jpg",
+      "width": 1000,
+      "height": 1120,
+      "bytes": 105856,
+      "subject": "The finished modern minimal look on the same subject: sheer base, groomed brow, bare lip tone",
+      "credit": {
+        "photographer": "Supplied with the project brief",
+        "source": "Studio original",
+        "licence": "Supplied for use in this build. Not a stock image and not covered by the Pexels licence.",
+        "page": ""
       }
     }
   ]

@@ -5,12 +5,15 @@ import type { ImageAsset } from '@/types/content';
  *
  * Two kinds of asset live here, and the distinction is deliberate:
  *
- *  - **`photograph`** — a licensed editorial photograph, downloaded at its final
- *    dimensions by `scripts/fetch-photography.mjs` into `public/photography/`
- *    from the hand-curated id list in `scripts/photography-sources.mjs`. Every
- *    one has a named photographer recorded in `public/photography/index.json`.
- *    Self-hosted rather than hot-linked, so `next/image` optimises it and no
- *    third-party origin is contacted when the page renders.
+ *  - **`photograph`** — a self-hosted JPEG in `public/photography/`. Most are
+ *    licensed editorial images downloaded at their final dimensions by
+ *    `scripts/fetch-photography.mjs` from the hand-curated id list in
+ *    `scripts/photography-sources.mjs`. The six before/after frames are matched
+ *    studio originals instead, imported from outside the repository by
+ *    `scripts/import-local-photography.mjs`. Either way the provenance of every
+ *    file is recorded in `public/photography/index.json`, and nothing is
+ *    hot-linked — `next/image` optimises it and no third-party origin is
+ *    contacted when the page renders.
  *  - **`artwork`** — a generated vector panel in `public/atelier/`, used in the
  *    three places where a photograph would assert something untrue: a map we do
  *    not embed, a plain ground texture, and the Open Graph card.
@@ -107,13 +110,19 @@ const MANIFEST = [
   ['portfolio-garden-christian', 1000, 1250, 'photograph', 'A bride outdoors with henna on her hands, in daylight.'],
   ['portfolio-studio-portrait', 1000, 1250, 'photograph', 'A studio bridal portrait against a plain warm ground.'],
 
-  /* ── Three first-brush / final-look pairings ────────────────────────────── */
-  ['before-soft-glam', 900, 1200, 'photograph', 'The first stage of a look: eyeshadow being laid down, eyes closed.'],
-  ['after-soft-glam', 900, 1200, 'photograph', 'The finished look: warm neutral base, bronzed eye, jewellery in place.'],
-  ['before-classic-red', 900, 1200, 'photograph', 'The first stage of a look: colour worked into the crease with a brush.'],
-  ['after-classic-red', 900, 1200, 'photograph', 'The finished look: red lip, defined liner, gold at the parting.'],
-  ['before-modern-minimal', 900, 1200, 'photograph', 'The first stage of a look: a single wash of shadow applied by hand.'],
-  ['after-modern-minimal', 900, 1200, 'photograph', 'The finished look: sheer base, groomed brow, lip in her own tone.'],
+  /* ── Three first-brush / final-look pairings ───────────────────────────────
+   * The only matched originals on the site: the same subject photographed twice
+   * in one room under one setup, supplied with the project rather than pulled
+   * from a stock library (scripts/photography-local.mjs). Declared portrait at
+   * 1000×1120 — the imported crop of a landscape original — because a comparison
+   * slider is read as a face, not as a room.
+   */
+  ['before-soft-glam', 1000, 1120, 'photograph', 'A woman at a studio mirror before any makeup is applied, hair clipped back from her face.'],
+  ['after-soft-glam', 1000, 1120, 'photograph', 'The same woman with the soft glam look finished: warm neutral base, softly defined eye, glossed lip.'],
+  ['before-classic-red', 1000, 1120, 'photograph', 'A woman at a studio mirror before any makeup is applied, hair pinned away from her face.'],
+  ['after-classic-red', 1000, 1120, 'photograph', 'The same woman with the classic red look finished: deep red lip, smoked eye, hair dressed up.'],
+  ['before-modern-minimal', 1000, 1120, 'photograph', 'A woman seated at a studio mirror before any makeup is applied, hair loosely pinned.'],
+  ['after-modern-minimal', 1000, 1120, 'photograph', 'The same woman with the modern minimal look finished: sheer base, groomed brow, lip left close to her own tone.'],
 
   /* ── The wedding week, function by function ────────────────────────────── */
   ['event-mehendi', 900, 1200, 'photograph', 'A bride at her mehendi, henna drying on her hands.'],

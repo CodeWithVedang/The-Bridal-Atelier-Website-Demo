@@ -24,6 +24,11 @@ import type { BeforeAfterPair } from '@/types/content';
  *
  * The reveal is a `clip-path`, not a width change: clipping does not re-lay-out
  * the image, so dragging stays on the compositor and the artwork never squashes.
+ *
+ * The figure takes its aspect ratio from the "after" asset rather than a constant.
+ * Both panels of a matched pair are the same shape by construction, and deriving
+ * it means replacing the pair with real studio frames at a different ratio needs
+ * no component change — the manifest is already the one place a size is stated.
  */
 
 export interface BeforeAfterSliderProps {
@@ -31,13 +36,12 @@ export interface BeforeAfterSliderProps {
   readonly className?: string;
 }
 
-const RATIO = '4 / 5';
-
 export function BeforeAfterSlider({ pair, className }: BeforeAfterSliderProps) {
   const [position, setPosition] = useState(50);
   const before = getImage(pair.beforeImageId);
   const after = getImage(pair.afterImageId);
   const sliderId = `reveal-${pair.id}`;
+  const ratio = `${after.width} / ${after.height}`;
 
   return (
     <figure className={cn('flex flex-col gap-4', className)}>
@@ -49,20 +53,20 @@ export function BeforeAfterSlider({ pair, className }: BeforeAfterSliderProps) {
         <div className="grid gap-3 sm:grid-cols-2">
           <div className="flex flex-col gap-2">
             <p className="text-label text-stone-500">Before</p>
-            <EditorialImage asset={before} ratio={RATIO} sizes="(max-width: 639px) 100vw, 50vw" />
+            <EditorialImage asset={before} ratio={ratio} sizes="(max-width: 639px) 100vw, 50vw" />
           </div>
           <div className="flex flex-col gap-2">
             <p className="text-label text-stone-500">After</p>
-            <EditorialImage asset={after} ratio={RATIO} sizes="(max-width: 639px) 100vw, 50vw" />
+            <EditorialImage asset={after} ratio={ratio} sizes="(max-width: 639px) 100vw, 50vw" />
           </div>
         </div>
       </noscript>
 
       <div id={`ba-live-${pair.id}`} className="flex flex-col gap-4">
-        <div className="relative isolate overflow-hidden" style={{ aspectRatio: RATIO }}>
+        <div className="relative isolate overflow-hidden" style={{ aspectRatio: ratio }}>
           <EditorialImage
             asset={after}
-            ratio={RATIO}
+            ratio={ratio}
             sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 420px"
             className="absolute inset-0 size-full"
           />
@@ -74,7 +78,7 @@ export function BeforeAfterSlider({ pair, className }: BeforeAfterSliderProps) {
           >
             <EditorialImage
               asset={before}
-              ratio={RATIO}
+              ratio={ratio}
               sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 420px"
               className="absolute inset-0 size-full"
             />
