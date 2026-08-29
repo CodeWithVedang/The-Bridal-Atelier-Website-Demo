@@ -92,13 +92,13 @@ export const PHOTOGRAPHY = [
   ['portfolio-garden-christian', 23623618, 1000, 1250, 'Rupinder Korpal', 'Bride outdoors with henna'],
   ['portfolio-studio-portrait', 29368882, 1000, 1250, 'SKG Photography', 'Studio bridal portrait'],
 
-  /* ── Three first-brush / final-look pairings ────────────────────────────── */
-  ['before-soft-glam', 7514850, 900, 1200, 'Kampus Production', 'Eyeshadow applied, eyes closed'],
-  ['after-soft-glam', 29368881, 900, 1200, 'SKG Photography', 'Finished bridal look with jewellery'],
-  ['before-classic-red', 10541310, 900, 1200, 'Lucretius Mooka', 'Eye shadow being applied'],
-  ['after-classic-red', 29368884, 900, 1200, 'SKG Photography', 'Finished red bridal look'],
-  ['before-modern-minimal', 8990592, 900, 1200, 'Alena Darmel', 'Eye shadow applied by hand'],
-  ['after-modern-minimal', 13048651, 900, 1200, 'Pexels contributor', 'Finished restrained bridal look'],
+  /* ── The three first-brush / final-look pairings are NOT listed here ──────
+   * They are matched studio originals — the same subject photographed before and
+   * after, in one room under one setup — declared in `photography-local.mjs` and
+   * imported by `import-local-photography.mjs`. Stock cannot supply a matched
+   * pair, and a slider that puts two different faces side by side would be
+   * claiming a transformation that never happened.
+   */
 
   /* ── The wedding week, function by function ────────────────────────────── */
   ['event-mehendi', 28120522, 900, 1200, 'Anish Bindoriya', 'Bride at her mehendi'],

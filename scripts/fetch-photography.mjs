@@ -23,6 +23,7 @@ import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } 
 import { join } from 'node:path';
 
 import { PHOTOGRAPHY } from './photography-sources.mjs';
+import { LOCAL_CREDIT, LOCAL_PHOTOGRAPHY } from './photography-local.mjs';
 
 const OUT_DIR = join(process.cwd(), 'public', 'photography');
 const FORCE = process.argv.includes('--force');
@@ -91,13 +92,46 @@ for (const [id, pexelsId, width, height, photographer, subject] of PHOTOGRAPHY) 
   });
 }
 
+/**
+ * The studio-supplied originals are already on disk — `import-local-photography.mjs`
+ * derived them from PNGs that live outside the repository. They still belong in
+ * the manifest, because `index.json` is what the credits page reads: an entry
+ * missing from it would silently drop a photograph out of the attribution list.
+ * Their credit is deliberately not a Pexels one.
+ */
+function localEntries() {
+  const rows = [];
+  for (const [id, , width, height, subject] of LOCAL_PHOTOGRAPHY) {
+    const file = join(OUT_DIR, `${id}.jpg`);
+    if (!existsSync(file)) {
+      failures.push({ id, pexelsId: null, reason: 'studio original not imported' });
+      process.stdout.write(`  ! ${id}  studio original not imported\n`);
+      continue;
+    }
+    process.stdout.write(`  · ${id}  (studio original)\n`);
+    rows.push({
+      id,
+      file: `/photography/${id}.jpg`,
+      width,
+      height,
+      bytes: statSync(file).size,
+      subject,
+      credit: { ...LOCAL_CREDIT },
+    });
+  }
+  return rows;
+}
+
+entries.push(...localEntries());
+
 writeFileSync(
   join(OUT_DIR, 'index.json'),
   `${JSON.stringify(
     {
       generatedBy: 'scripts/fetch-photography.mjs',
       note: 'Provenance for every photograph on the site. Replace a file with real studio work at the same id and dimensions, and remove its row from scripts/photography-sources.mjs.',
-      licence: 'Pexels licence (free to use, attribution not required, modification permitted). Credited here regardless.',
+      licence:
+        'Most photographs are used under the Pexels licence (free to use, attribution not required, modification permitted) and credited here regardless. Rows credited to a studio original were supplied with the project and are not Pexels images.',
       count: entries.length,
       photographs: entries,
     },
@@ -106,7 +140,9 @@ writeFileSync(
   )}\n`,
 );
 
-process.stdout.write(`\n${entries.length}/${PHOTOGRAPHY.length} photographs in public/photography/\n`);
+process.stdout.write(
+  `\n${entries.length}/${PHOTOGRAPHY.length + LOCAL_PHOTOGRAPHY.length} photographs in public/photography/\n`,
+);
 if (failures.length) {
   process.stdout.write(`${failures.length} failed: ${failures.map((f) => f.id).join(', ')}\n`);
   process.exitCode = 1;
