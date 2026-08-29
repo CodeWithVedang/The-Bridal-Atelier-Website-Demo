@@ -2,14 +2,17 @@ import { Container, Rule, Section } from '@/components/primitives';
 import { PageHeader } from '@/components/sections';
 import { LAST_REVIEWED, privacySections } from '@/content/legal';
 import {
+  licensedCredits,
   photographersByName,
   photographyCredits,
   photographyLicence,
+  studioCredits,
 } from '@/content/photography-credits';
 import { disclosures } from '@/content/site-copy';
 import { breadcrumbNode, graph } from '@/lib/jsonld';
 import { pageMetadata, trail } from '@/lib/seo';
 
+import type { LegalSection } from '@/types/content';
 import type { Metadata } from 'next';
 
 /**
@@ -36,6 +39,13 @@ export const metadata: Metadata = pageMetadata({
 
 const CRUMBS = trail({ label: 'Privacy', href: '/privacy' });
 
+/**
+ * `privacySections` is authored `as const`, which narrows each element to its own
+ * literal shape — so the sections without bullets have no `bullets` property at
+ * all. Widening to the interface is what lets one loop render both shapes.
+ */
+const SECTIONS: readonly LegalSection[] = privacySections;
+
 const REVIEWED = new Intl.DateTimeFormat('en-IN', {
   day: 'numeric',
   month: 'long',
@@ -56,7 +66,7 @@ export default function PrivacyPage() {
 
       <Section tone="ivory">
         <Container width="narrow" className="flex flex-col gap-12">
-          {privacySections.map((section) => (
+          {SECTIONS.map((section) => (
             <section key={section.heading} className="flex flex-col gap-4">
               <h2 className="text-display-sm">{section.heading}</h2>
               {section.paragraphs.map((paragraph) => (
@@ -86,10 +96,12 @@ export default function PrivacyPage() {
           <h2 className="text-display-sm">Photography credits</h2>
           <p className="text-body-md leading-relaxed text-espresso-700">
             The Bridal Atelier is a demonstration brand and has no client photography of its own.
-            Every photograph on this site is a licensed editorial image by a named photographer,
-            downloaded once and served from this domain — nothing is hot-linked, so no third-party
-            origin is contacted when a page loads. The three remaining image assets are generated
-            vector artwork.
+            Almost every photograph here is a licensed editorial image by a named photographer; the
+            {' '}
+            {studioCredits.length} before/after frames are matched originals supplied with the
+            project brief. Both kinds are downloaded once and served from this domain — nothing is
+            hot-linked, so no third-party origin is contacted when a page loads. The three remaining
+            image assets are generated vector artwork.
           </p>
           <p className="text-body-sm text-espresso-700">{photographyLicence}</p>
 
@@ -97,7 +109,8 @@ export default function PrivacyPage() {
 
           <div className="flex flex-col gap-3">
             <h3 className="text-body-lg font-medium text-espresso-900">
-              {photographersByName.length} photographers, {photographyCredits.length} photographs
+              {photographersByName.length} photographers, {licensedCredits.length} licensed
+              photographs
             </h3>
             <ul className="flex flex-wrap gap-x-4 gap-y-1.5">
               {photographersByName.map((entry) => (
@@ -111,11 +124,24 @@ export default function PrivacyPage() {
             </ul>
           </div>
 
+          <div className="flex flex-col gap-2">
+            <h3 className="text-body-lg font-medium text-espresso-900">
+              {studioCredits.length} studio originals
+            </h3>
+            <p className="text-body-sm leading-relaxed text-espresso-700">
+              The before/after comparison needs one subject photographed twice under one lighting
+              setup, which no stock library can supply — two different faces in a slider would claim
+              a transformation that never happened. Those {studioCredits.length} frames were supplied
+              with the project brief for use in this build. They are not stock images and are not
+              covered by the licence above.
+            </p>
+          </div>
+
           <Rule tone="sand" />
 
           <details className="group flex flex-col gap-3">
             <summary className="inline-flex min-h-11 cursor-pointer items-center text-body-sm font-medium text-espresso-900">
-              Every file, with its source page
+              Every file, with its source
             </summary>
             <ul className="mt-4 flex flex-col gap-3">
               {photographyCredits.map((row) => (
@@ -126,14 +152,18 @@ export default function PrivacyPage() {
                   </span>
                   <span className="text-body-xs text-stone-500">
                     {row.credit.photographer} ·{' '}
-                    <a
-                      href={row.credit.page}
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      className="underline-draw text-espresso-700"
-                    >
-                      {row.credit.source}
-                    </a>{' '}
+                    {row.credit.page ? (
+                      <a
+                        href={row.credit.page}
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        className="underline-draw text-espresso-700"
+                      >
+                        {row.credit.source}
+                      </a>
+                    ) : (
+                      row.credit.source
+                    )}{' '}
                     · {row.width}×{row.height}
                   </span>
                 </li>

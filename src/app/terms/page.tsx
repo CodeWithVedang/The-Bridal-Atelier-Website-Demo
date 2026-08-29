@@ -7,6 +7,7 @@ import { disclosures } from '@/content/site-copy';
 import { breadcrumbNode, graph } from '@/lib/jsonld';
 import { pageMetadata, trail } from '@/lib/seo';
 
+import type { LegalSection } from '@/types/content';
 import type { Metadata } from 'next';
 
 /**
@@ -31,6 +32,9 @@ export const metadata: Metadata = pageMetadata({
 
 const CRUMBS = trail({ label: 'Terms', href: '/terms' });
 
+/** Widened from the `as const` literal so one loop can render both shapes. */
+const SECTIONS: readonly LegalSection[] = termsSections;
+
 const REVIEWED = new Intl.DateTimeFormat('en-IN', {
   day: 'numeric',
   month: 'long',
@@ -51,7 +55,7 @@ export default function TermsPage() {
 
       <Section tone="ivory">
         <Container width="narrow" className="flex flex-col gap-12">
-          {termsSections.map((section) => (
+          {SECTIONS.map((section) => (
             <section key={section.heading} className="flex flex-col gap-4">
               <h2 className="text-display-sm">{section.heading}</h2>
               {section.paragraphs.map((paragraph) => (

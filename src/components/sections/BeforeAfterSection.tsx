@@ -10,12 +10,13 @@ import type { BeforeAfterPair } from '@/types/content';
  * Before and after (brief §11).
  *
  * Three pairs, one column each from `lg`. Each slider owns its own caption and
- * its own honest note — the panels are editorial artwork, not client photographs
- * — so this section is layout and heading only (docs/DECISION_LOG.md D5).
+ * its own note — the pairs are matched studio originals, one subject per pair,
+ * and the note says what changed between the two frames — so this section is
+ * layout and heading only (docs/DECISION_LOG.md D5).
  *
  * One column below 1024 rather than two: a comparison slider halves its own
- * usable width the moment it is placed in a narrow column, and a 4:5 figure with
- * a draggable handle needs the room.
+ * usable width the moment it is placed in a narrow column, and a portrait figure
+ * with a draggable handle needs the room.
  */
 
 export interface BeforeAfterSectionProps {
